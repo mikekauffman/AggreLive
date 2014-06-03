@@ -50,3 +50,23 @@
 [06/03/14 10:11:51 -0600 Michaels-MacBook-Pro.local (67884)] INFO : Installing Rails 4 view instrumentation
 [06/03/14 10:11:51 -0600 Michaels-MacBook-Pro.local (67884)] INFO : Installing Rails4 Error instrumentation
 [06/03/14 10:11:51 -0600 Michaels-MacBook-Pro.local (67884)] INFO : Finished instrumentation
+[06/03/14 11:57:19 -0600 Michaels-MacBook-Pro.local (67303)] INFO : Starting Agent shutdown
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Starting the New Relic agent in "development" environment.
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Reading configuration from 
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] ERROR : Unable to read configuration file : Is a directory @ io_fread - /Users/MikeMac/gSchoolWork/aggreshow
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Enabling the Request Sampler.
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Environment: development
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Dispatcher: webrick
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Application: development
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Installing ActiveRecord 4 instrumentation
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Installing Net instrumentation
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Installing deferred Rack instrumentation
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Installing Rails 4 Controller instrumentation
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Installing Rails 4 view instrumentation
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Installing Rails4 Error instrumentation
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Finished instrumentation
+[06/03/14 13:08:35 -0600 Michaels-MacBook-Pro.local (78896)] INFO : Doing deferred dependency-detection before Rack startup
+[06/03/14 13:09:08 -0600 Michaels-MacBook-Pro.local (78896)] ERROR : Invalid license key, please contact support@newrelic.com
+[06/03/14 13:09:08 -0600 Michaels-MacBook-Pro.local (78896)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
