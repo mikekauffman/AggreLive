@@ -1,0 +1,35 @@
+$navbar-default-bg: #C7F464;
+$body-bg: #556270;
+$mighty-slate: #556270;
+$pacifica: #4ECDC4;
+$apple-chic: #C7F464;
+$cheery-pink: #FF6B6B;
+$grandmas-pillow: #C44D58;
+$jumbotron-bg: $mighty-slate;
+
+@import "bootstrap";
+
+.navbar-logo {
+  height: 25%;
+}
+
+.jumbotron {
+  h2 {
+    color: $cheery-pink;
+  }
+}
+
+.navbar-form {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+  margin-top: 7px;
+}
+
+.btn-default {
+  background-color: $pacifica;
+  color: $apple-chic;
+}
+
