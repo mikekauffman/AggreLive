@@ -1,22 +1,30 @@
 $navbar-default-bg: #C7F464;
-$body-bg: #556270;
 $mighty-slate: #556270;
 $pacifica: #4ECDC4;
 $apple-chic: #C7F464;
 $cheery-pink: #FF6B6B;
 $grandmas-pillow: #C44D58;
 $jumbotron-bg: $mighty-slate;
+$navbar-default-color: $mighty-slate;
+$body-bg: $mighty-slate;
 
 @import "bootstrap";
 
-.navbar-logo {
-  height: 25%;
+.navbar-brand img {
+  max-width: 200px;
+  margin-top: -10px;
+  z-index: 2;
+  position: absolute;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 2;
 }
 
 .jumbotron {
-  h2 {
-    color: $cheery-pink;
-  }
+  color: $cheery-pink;
+  border-radius: 6px;
 }
 
 .navbar-form {
@@ -26,10 +34,12 @@ $jumbotron-bg: $mighty-slate;
   text-align: center;
   margin: auto;
   margin-top: 7px;
+  z-index: 1;
 }
 
 .btn-default {
   background-color: $mighty-slate;
   color: $apple-chic;
 }
+
 
