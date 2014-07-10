@@ -10,6 +10,10 @@ $body-bg: $mighty-slate;
 
 @import "bootstrap";
 
+body {
+ margin-bottom: 40px;
+}
+
 .navbar-brand img {
   max-width: 200px;
   margin-top: -10px;
@@ -68,15 +72,20 @@ form {
 }
 
 .error_messages {
-  margin-top: 1.5em;
+  position: fixed;
+  top: 45%;
+  left: 1%;
   font-family: 'Roboto', sans-serif;
   background-color: $grandmas-pillow;
   font-size: 150%;
-  min-width: 100%;
   color: white;
   text-align: center;
+  min-width: 300px;
+  ul {
+    padding: 0;
+  }
   li {
+    padding: 0;
     list-style-type: none;
   }
 }
-
