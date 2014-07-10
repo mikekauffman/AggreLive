@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy', as: 'logout'
   get '/login', to: 'sessions#new', as: 'login'
   post '/sessions', to: 'sessions#create'
+  post '/search', to: 'searches#create', as: 'new_search'
+  get '/search/:term', to: 'searches#show', as: 'search'
 end
