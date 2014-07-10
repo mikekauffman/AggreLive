@@ -12,6 +12,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'bcrypt', '~> 3.1.7'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'rails_12factor', '~> 0.0.2', group: :production
 

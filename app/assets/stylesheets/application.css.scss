@@ -52,12 +52,31 @@ $body-bg: $mighty-slate;
   background-color: $apple-chic;
   height: 30px;
   padding: 5px;
+  .container {
+    text-align: right;
+  }
 }
 
-.foot-fixed-bottom .container {
-  text-align: right;
+form {
+  h2 {
+    color: $cheery-pink
+  }
+  input {
+
+  }
 }
 
-
-
+.error_messages {
+  margin-top: -.7em;
+  font-family: 'Roboto', sans-serif;
+  background-color: $grandmas-pillow;
+  font-size: 150%;
+  min-width: 100%;
+  color: white;
+  text-align: center;
+  li {
+    list-style-type: none;
+    margin: -.4em;
+  }
+}
 
