@@ -59,15 +59,16 @@ $body-bg: $mighty-slate;
 
 form {
   h2 {
-    color: $cheery-pink
+    color: $apple-chic;
+    font-size: 300%;
   }
-  input {
-
+  .btn {
+    color: $apple-chic;
   }
 }
 
 .error_messages {
-  margin-top: -.7em;
+  margin-top: 1.5em;
   font-family: 'Roboto', sans-serif;
   background-color: $grandmas-pillow;
   font-size: 150%;
@@ -76,7 +77,6 @@ form {
   text-align: center;
   li {
     list-style-type: none;
-    margin: -.4em;
   }
 }
 
