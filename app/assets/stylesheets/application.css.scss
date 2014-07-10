@@ -11,7 +11,12 @@ $body-bg: $mighty-slate;
 @import "bootstrap";
 
 body {
- margin-bottom: 40px;
+  background: image_url('concert_bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 40px;
 }
 
 .navbar-brand img {
@@ -29,6 +34,11 @@ body {
 .jumbotron {
   color: $cheery-pink;
   border-radius: 6px;
+  background-color: transparent;
+  h2 {
+    color: $cheery-pink;
+    font-weight: bold;
+  }
 }
 
 .navbar-form {
