@@ -110,7 +110,7 @@ body {
   color: $apple-chic;
 }
 .day {
-  color: black;
+  color: $cheery-pink;
 }
 .event-list {
   list-style: none;
@@ -129,7 +129,7 @@ body {
   display: inline-block;
   width: 100%;
   color: rgb(255, 255, 255);
-  background-color: rgb(197, 44, 102);
+  background-color: $mighty-slate;
   padding: 5px;
   text-align: center;
   text-transform: uppercase;
@@ -160,6 +160,7 @@ body {
   text-align: center;
 }
 .event-list > li > .info > .title {
+  color: $mighty-slate;
   font-size: 17pt;
   font-weight: 700;
   margin: 0px;
