@@ -27,7 +27,7 @@
       </div>
       <form class="navbar-form navbar-left" role="search" action="/search" method="post">
         <div class="form-group">
-          <input type="text" name="search_term" class="form-control" style="padding-left: 100px" placeholder="Search">
+          <input type="text" name="search_term" class="form-control" style="padding-left: 20px; padding-right: 20px" placeholder="Search by City, State">
         </div>
         <%= token_tag nil %>
         <input type="hidden" value="<%= form_authenticity_token %>" name="authenticity_token">
