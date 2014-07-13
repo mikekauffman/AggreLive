@@ -19,6 +19,14 @@ class SearchesController < ApplicationController
   def show
     search_term = params[:term].gsub('+', " ")
     @search = Search.find_by(term: search_term)
+    city_search = CitySearch.new(search_term)
+    events = city_search.get_events(city_search.get_id)
+    concerts = []
+    events.each do |concert|
+      concert_hash = city_search.concert_hash(concert)
+      concerts << concert_hash if !concert_hash[:date].nil?
+    end
+    @concerts = concerts
   end
 
 end

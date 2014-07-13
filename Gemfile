@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'faraday', '~> 0.9.0'
 gem 'newrelic_rpm', '~> 3.8.0.218'
+gem 'dotenv-rails', '~> 0.11.1'
 gem 'oauth2', '~> 0.9.3'
 gem 'rails', '4.1.1'
 gem 'pg'
@@ -18,6 +19,8 @@ gem 'rails_12factor', '~> 0.0.2', group: :production
 
 
 group :development, :test do
+  gem 'vcr', '~> 2.9.2'
+  gem 'webmock', '~> 1.18.0'
   gem 'rspec-rails', '~> 2.14.2'
   gem 'capybara', '~> 2.2.1'
   gem 'launchy'
