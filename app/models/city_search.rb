@@ -21,7 +21,7 @@ class CitySearch
     date = (concert["start"]["datetime"]).to_datetime if concert["start"]["datetime"]
     h[:date] = concert["start"]["datetime"]
     h[:popularity] = concert["popularity"]
-    h[:tag_line] = concert["displayName"]
+    h[:tag_line] = concert["displayName"][0..-16]
     h[:date_month] = date.strftime('%^b') if date
     h[:date_day] = date.strftime('%-d') if date
     h[:date_year] = date.strftime('%Y') if date
