@@ -6,6 +6,7 @@ describe EventSearch do
       event_search = EventSearch.new
       concerts = event_search.concerts_in(6404, 1)
       expected_concert = {
+        artist: "Mac DeMarco",
         date: "2014-07-14T20:00:00-0600",
         tag_line: "Mac DeMarco with Calvin Love and The Meatbodies at Bluebird Theater (July 14, 2014)",
         url: "http://www.songkick.com/concerts/19834959-mac-demarco-at-bluebird-theater?utm_source=27408&utm_medium=partner",
@@ -24,6 +25,7 @@ describe EventSearch do
       event_search = EventSearch.new
       concerts = event_search.concerts_in(6404, 2)
       expected_concert = {
+        artist: "Enomatic",
         date: "2014-07-16T19:00:00-0600",
         date_day: 16,
         date_month: "JUL",

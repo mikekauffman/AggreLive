@@ -12,6 +12,7 @@ class EventSearch
       h[:tag_line] = concert["displayName"]
       h[:url] = concert["uri"]
       h[:id] = concert["id"]
+      h[:artist] = concert["performance"][0]["displayName"]
       h
     end
   end
