@@ -8,7 +8,7 @@ describe EventSearch do
       expected_concert = {
         artist: "Mac DeMarco",
         date: "2014-07-14T20:00:00-0600",
-        tag_line: "Mac DeMarco with Calvin Love and The Meatbodies at Bluebird Theater (July 14, 2014)",
+        tag_line: "Mac DeMarco with Calvin Love and The Meatbodies at Bluebird Theater",
         url: "http://www.songkick.com/concerts/19834959-mac-demarco-at-bluebird-theater?utm_source=27408&utm_medium=partner",
         date_month: "JUL",
         date_day: 14,
@@ -30,7 +30,7 @@ describe EventSearch do
         date_day: 16,
         date_month: "JUL",
         date_year: 2014,
-        tag_line: "Enomatic at The Living Room (July 16, 2014)",
+        tag_line: "Enomatic at The Living Room",
         url: "http://www.songkick.com/concerts/21048853-enomatic-at-living-room?utm_source=27408&utm_medium=partner",
         id: 21048853
       }
