@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
+      <ul class="event-list">
+        <li>
+          <time datetime="2014-07-20 0000">
+            <span class="day"><%= event.date_day %></span>
+            <span class="month"><%= event.date_month %></span>
+            <span class="year"><%= event.date_year %></span>
+          </time>
+          <div class="info">
+            <h2 class="title"><%= event.tag_line %></h2>
+
+            <p class="desc"><%= event.artist %></p>
+            <ul>
+              <li style="width:100%;"><a href="<%= event.url %>"><span class="fa fa-globe"></span> Website</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

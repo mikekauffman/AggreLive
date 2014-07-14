@@ -10,17 +10,21 @@
           </time>
           <div class="info">
             <h2 class="title"><%= concert[:tag_line] %></h2>
+
             <p class="desc"><%= concert[:artist] %></p>
             <ul>
               <li style="width:100%;"><a href="<%= concert[:url] %>"><span class="fa fa-globe"></span> Website</a></li>
             </ul>
           </div>
-          <div class="social">
-            <ul>
-              <li class="google-plus" style="width:33%;">
-                <a href="#google-plus"><span class="fa fa-heart"></span></a></li>
-            </ul>
-          </div>
+          <% if current_user %>
+              <div class="social">
+                <ul>
+                  <li class="google-plus" style="width:33%;">
+                    <a href="/users/<%= current_user.id %>/events/<%= concert[:id] %>"><span class="fa fa-heart"></span></a>
+                  </li>
+                </ul>
+              </div>
+          <% end %>
         </li>
       </ul>
     </div>

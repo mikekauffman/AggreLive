@@ -19,6 +19,7 @@ class CitySearch
   def concert_hash(concert)
     h = {}
     date = (concert["start"]["datetime"]).to_datetime if concert["start"]["datetime"]
+    h[:id] = concert["id"]
     h[:date] = concert["start"]["datetime"]
     h[:popularity] = concert["popularity"]
     h[:tag_line] = concert["displayName"][0..-16]
