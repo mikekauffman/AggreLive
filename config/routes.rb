@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get '/search/:term', to: 'searches#show', as: 'search'
   get '/users/:id/events/:event_id', to: 'events#create'
   get '/users/:id/events/:event_id/remove', to: 'events#destroy'
+  get '/:search_term/:page_number', to: 'searches#next_page'
 end

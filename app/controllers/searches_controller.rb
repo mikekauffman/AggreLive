@@ -19,15 +19,20 @@ class SearchesController < ApplicationController
   def show
     search_term = params[:term].gsub('+', " ")
     @search = Search.find_by(term: search_term)
-    city_search = CitySearch.new(search_term)
-    city_id = city_search.get_id
-    events = city_search.get_events(city_id)
-    concerts = []
-    events.each do |concert|
-      concert_hash = city_search.concert_hash(concert)
-      concerts << concert_hash if !concert_hash[:date].nil?
-    end
-    @concerts = concerts
+    city_search = CitySearch.new
+    city_id = city_search.id_for(search_term)
+    event_search = EventSearch.new
+    @concerts = event_search.concerts_in(city_id)
+  end
+
+  def next_page
+    search_term = params[:search_term].gsub('+', " ")
+    @search = Search.find_by(term: search_term)
+    city_search = CitySearch.new
+    city_id = city_search.id_for(search_term)
+    event_search = EventSearch.new
+    @concerts = event_search.paginated_concerts(city_id, params[:page_number])
+    render 'searches/show'
   end
 
 end

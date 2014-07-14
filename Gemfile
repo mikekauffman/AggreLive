@@ -16,10 +16,12 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'rails_12factor', '~> 0.0.2', group: :production
 
-
-group :development, :test do
+group :test do
   gem 'vcr', '~> 2.9.2'
   gem 'webmock', '~> 1.18.0'
+end
+
+group :development, :test do
   gem 'rspec-rails', '~> 2.14.2'
   gem 'capybara', '~> 2.2.1'
   gem 'launchy'
