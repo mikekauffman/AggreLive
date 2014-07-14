@@ -4,17 +4,17 @@ describe EventSearch do
   it 'gets events for a city' do
     VCR.use_cassette('concert_info_test') do
       event_search = EventSearch.new
-      concerts = event_search.concerts_in(6404)
+      concerts = event_search.concerts_in(6404, 1)
       expected_concert = {
-        date: "2014-07-13T20:00:00-0600",
-        tag_line: "Searson at Clement Park (July 13, 2014)",
-        url: "http://www.songkick.com/concerts/19514814-searson-at-clement-park?utm_source=27408&utm_medium=partner",
+        date: "2014-07-14T20:00:00-0600",
+        tag_line: "Mac DeMarco with Calvin Love and The Meatbodies at Bluebird Theater (July 14, 2014)",
+        url: "http://www.songkick.com/concerts/19834959-mac-demarco-at-bluebird-theater?utm_source=27408&utm_medium=partner",
         date_month: "JUL",
-        date_day: 13,
+        date_day: 14,
         date_year: 2014,
-        id: 19514814
+        id: 19834959
       }
-      expect(concerts.length).to eq 37
+      expect(concerts.length).to eq 40
       expect(concerts.first).to eq expected_concert
     end
   end
@@ -22,7 +22,7 @@ describe EventSearch do
   it 'gets the next page of events for a city' do
     VCR.use_cassette('paginated_concerts') do
       event_search = EventSearch.new
-      concerts = event_search.paginated_concerts(6404, 2)
+      concerts = event_search.concerts_in(6404, 2)
       expected_concert = {
         date: "2014-07-16T19:00:00-0600",
         date_day: 16,

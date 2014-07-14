@@ -6,10 +6,10 @@ feature 'User searches for upcoming shows' do
       visit root_path
       fill_in 'search_term', with: 'Denver, CO'
       click_on 'Submit'
-      expect(page).to have_content 'Avett Brothers'
-      expect(page).to have_content 'Red Rocks'
+      expect(page).to have_content 'Mac DeMarco with Calvin Love'
+      expect(page).to have_content 'Bluebird Theater'
       expect(page).to have_content 'JUL'
-      expect(page).to have_content '13'
+      expect(page).to have_content '14'
     end
   end
 
