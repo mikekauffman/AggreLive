@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   post '/sessions', to: 'sessions#create'
   post '/search', to: 'searches#create', as: 'new_search'
   get '/search/:term', to: 'searches#show', as: 'search'
+  get '/search/:search_term/:page_number', to: 'searches#next_page'
   get '/users/:id/events/:event_id', to: 'events#create'
   get '/users/:id/events/:event_id/remove', to: 'events#destroy'
-  get '/:search_term/:page_number', to: 'searches#next_page'
 end
