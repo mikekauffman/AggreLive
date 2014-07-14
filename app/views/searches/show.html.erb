@@ -3,13 +3,5 @@
     Upcoming shows near <%= @search.term.gsub(' ', ', ') %>
   </h2>
   <%= render partial: 'concerts/concert', collection: @concerts %>
-  <div class="text-center">
-    <ul class="pagination pagination-lg">
-      <li><a href="/search/<%= @search.url_safe_term %>/1">1</a></li>
-      <li><a href="/search/<%= @search.url_safe_term %>/2">2</a></li>
-      <li><a href="/search/<%= @search.url_safe_term %>/3">3</a></li>
-      <li><a href="/search/<%= @search.url_safe_term %>/4">4</a></li>
-      <li><a href="/search/<%= @search.url_safe_term %>/5">5</a></li>
-    </ul>
-  </div>
+  <%= render partial: 'concerts/pagination', locals: {current_page: @current_page} %>
 </div>
