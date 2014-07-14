@@ -16,6 +16,13 @@
               <li style="width:100%;"><a href="<%= event.url %>"><span class="fa fa-globe"></span> Website</a></li>
             </ul>
           </div>
+          <div class="social">
+            <ul>
+              <li class="google-plus" style="width:33%;">
+                <a href="/users/<%= current_user.id %>/events/<%= event.id %>/remove"><span class="fa fa-times"></span></a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
